@@ -1,0 +1,34 @@
+> var n1=8
+> var n = 200
+undefined
+> n
+200
+> typeof n
+'number'
+> n = "Google"
+'Google'
+> typeof n
+'string'
+> typeof 6
+'number'
+> typeof 6,5
+5
+> typeof 6.5
+'number'
+> typeof "6.5"
+'string'
+> typeof[]
+'object'
+> typeof function(){}
+'function'
+> typeof undefined
+'undefined'
+> typeof Nan
+'undefined'
+> typeof NaN
+'number'
+> typeof Infinity
+'number'
+> typeof null
+'object'
+>

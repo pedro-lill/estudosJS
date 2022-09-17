@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           body{
+               background-color: rgb(150, 150, 255);
+               color: white;
+               font: normal 20pt Arial;
+           } 
+           h1{
+               color: aquamarine;/*comentario em css*/
+           }
+    </style>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1><!--comentario em html-->
+    <p>conversoes de string para number e vice versa</p>
+    <script>
+        var n1 = Number(window.prompt('digite o primeiro numero'))// window prompt retorna uma string 
+        var n2 = Number(window.prompt('digite o segundo numero')) // se eu precisar de int ou float uso o :
+                                                                    // numer.parseint() ou number.parsefloat()
+        var soma = n1 + n2
+        window.alert('A soma dos valores é: ' + soma)
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)        
+        //window.alert("A soma dos valores é: " + String(soma))
+        //window.alert("A soma dos valores é: " + soma.toString())
+
+        // existem duas formas de fazer a conversao String para numero
+        // usando só o String(n)
+        //ou usando o n.toString()
+
+    
+        // number + number para adição
+        // string + string para concatenacao
+    </script>
+</body>
+</html>
+
