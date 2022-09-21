@@ -102,6 +102,81 @@ Operador ternario
     teste ? 'verdadeiro' : 'falso'
     media>=7 ? 'aprovado' : 'reprovado'
     
+DOM - > document object model
+    Arvore DOM
+    
+                window
+
+    location   document  history 
+
+                html
+                
+        head            body
+
+    title   meta     h1  p  a  img div 
 
 
+Para navegar pelo DOM:
+    por Marca:
+        document.getElementsByTagName('p')
+
+    por ID
+        document.getElementById('msg')
+            <div id = "msg">Clique em mim</div>
+            <script>
+                var corpo = window.document.body
+                var p1 = window.document.getElementsByTagName('p')[1] // pega o primeiro elemento p
+                var d = window.document.getElementById('msg')
+                d.style.background = 'green'
+                // d.innerText = 'estou aguardando'
+                window.document.getElementById('msg').innerText = 'estou aguardando'
+
+            </script>
+
+    por Nome
+        document.getElementsByName('nome')
         
+    por Classe
+        document.getElementsByClassName('msg')
+    por Seletor
+        document.querySelector('div#msg')
+        document.querySelectorAll('p')
+
+
+
+
+
+
+comandos JS:
+    window.document.body
+    window.document.write('Olá mundo! \n') // \n quebra de linha
+    window.document.write(window.document.charset) // mostra o charset
+    window.document.write(window.navigator.appName) // mostra o nome do navegador
+    window.document.write(window.navigator.appVersion) // mostra a versão do navegador
+    window.document.write(window.document.URL) // mostra a url
+    window.document.write(window.document.domain) // mostra o dominio   
+    window.document.write(window.document.title) // mostra o titulo
+    window.document.write(window.document.lastModified) // mostra a ultima modificação
+    window.document.write(window.document.referrer) // mostra a pagina de referencia
+    window.document.write(window.document.cookie) // mostra o cookie
+    window.document.write(window.document.body) // mostra o body
+    window.document.write(window.document.head) // mostra o head
+    window.document.write(window.document.images) // mostra as imagens
+    window.document.write(window.document.links) // mostra os links
+    window.document.write(window.document.forms) // mostra os forms
+    window.document.write(window.document.styleSheets) // mostra as folhas de estilo
+    window.document.write(window.document.scripts) // mostra os scripts
+    window.document.write(window.document.anchors) // mostra os ancoras
+    window.document.write(window.document.applets) // mostra os applets
+    window.document.write(window.document.embeds) // mostra os embeds
+    window.document.write(window.document.plugins) // mostra os plugins
+    window.document.write(window.document.all) // mostra todos os elementos
+    window.document.write(window.document.compatMode) // mostra o modo de compatibilidade
+    window.document.write(window.document.characterSet) // mostra o conjunto de caracteres
+    window.document.write(window.document.contentType) // mostra o tipo de conteudo
+    window.document.write(window.document.doctype) // mostra o doctype
+    window.document.write(window.document.documentMode) // mostra o modo de documento
+    window.document.write(window.document.documentURI) // mostra o URI do documento
+    window.document.write(window.document.documentElement) // mostra o elemento raiz
+    window.document.write(window.document.documentURIObject) // mostra o objeto URI do documento
+    window.document.write(window.document.embeds) // mostra os embeds
