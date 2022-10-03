@@ -138,14 +138,10 @@ Para navegar pelo DOM:
         
     por Classe
         document.getElementsByClassName('msg')
+
     por Seletor
         document.querySelector('div#msg')
         document.querySelectorAll('p')
-
-
-
-
-
 
 comandos JS:
     window.document.body
@@ -180,3 +176,68 @@ comandos JS:
     window.document.write(window.document.documentElement) // mostra o elemento raiz
     window.document.write(window.document.documentURIObject) // mostra o objeto URI do documento
     window.document.write(window.document.embeds) // mostra os embeds
+
+
+Eventos:
+    Mouse onclik:
+        mouseenter -> quando o mouse entra no elemento
+        mouseleave -> quando o mouse sai do elemento
+        mouseover -> quando o mouse passa por cima do elemento
+        mousemove -> quando o mouse se move sobre o elemento
+        mousedown -> quando o mouse é pressionado sobre o elemento
+        mouseup -> quando o mouse é solto sobre o elemento
+        click -> quando o mouse é clicado sobre o elemento
+        dbclick -> quando o mouse é clicado duas vezes sobre o elemento
+
+
+Condições:
+    precisamos seguir uma sequencia de execução
+    com as condições podemos mudar a sequencia que o programa segue
+        if (condição){
+            // bloco de código
+        } else if (condição){
+            // bloco de código
+        } else {
+            // bloco de código
+        } 
+    desvio condicional simples
+        if (condição){
+            // bloco de código
+        }
+        desvio condicional composto
+        if (condição){
+            // bloco de código
+        } else {
+            // bloco de código
+        }
+    desvio condicional encadeado
+        if (condição){
+            // bloco de código
+        } else if (condição){
+            // bloco de código
+        } else {
+            // bloco de código
+        }
+    desvio condicional múltiplo:
+        switch (expressão){
+            case valor1:
+                // bloco de código
+                break
+            case valor2:
+                // bloco de código
+                break
+            default:
+                // bloco de código
+        }
+    desvio condicional aninhado
+        if (condição){
+            if (condição){
+                // bloco de código
+            } else {
+                // bloco de código
+            }
+        } else {
+            // bloco de código
+        }
+
+lembrando id é com a # e class é com ponto para o css

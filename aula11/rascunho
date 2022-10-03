@@ -1,0 +1,34 @@
+<h1>Condições</h1>
+    <h2>Exercício 14</h2>
+    <p>Escreva um programa que leia um número inteiro e mostre na tela se ele é par ou ímpar.</p>
+    <form action="ex014.php" method="post">
+        <label for="num">Digite um número inteiro:</label>
+        <input type="number" name="num" id="num" required>
+        <input type="submit" value="Verificar">
+    </form>
+    <?php
+        if (isset($_POST['num'])) {
+            $num = $_POST['num'];
+            if ($num % 2 == 0) {
+                echo "<p class='verde'>O número $num é par.</p>";
+            } else {
+                echo "<p class='vermelho'>O número $num é ímpar.</p>";
+            }
+        }
+    ?>
+
+
+
+function calcular(){
+            var vel = Number(txtv.value)
+            if (vel > 60){
+                var multa = (vel - 60) * 7
+                var msg = `Você foi multado em R$ ${multa.toFixed(2)}`
+                var cor = 'vermelho'
+            } else {
+                var msg = 'Você está dentro do limite de velocidade'
+                var cor = 'verde'
+            }
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p class="${cor}">${msg}</p>`
+        }
