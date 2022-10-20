@@ -241,3 +241,58 @@ Condições:
         }
 
 lembrando id é com a # e class é com ponto para o css
+
+condições multiplas 
+    switch (expressão){
+        case valor1:
+            // bloco de código
+            break
+        case valor2:
+            // bloco de código
+            break
+        default:
+            // bloco de código
+    }
+    o break é obrigatorio para que o programa não continue executando os outros cases
+    muito util em valores pontuais
+    só funciona com int e string
+    nao é mt bom para intervalos
+    
+
+    exercicios:
+        centralizar com js:
+            <div id="msg">
+                <p>Olá mundo!</p>
+            </div>
+            <script>
+                var d = window.document.getElementById('msg')
+                d.style.textAlign = 'center'
+            </script>
+
+        importar imagem em js:
+            <div id="msg">
+                <p>Olá mundo!</p>
+            </div>
+            <script>
+                var d = window.document.getElementById('msg')
+                d.style.textAlign = 'center'
+                d.innerHTML = '<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">'
+            </script>
+        ou:
+            <div id="msg">
+                <p>Olá mundo!</p>
+            </div>
+            <script>
+                var d = window.document.getElementById('msg')
+                d.style.textAlign = 'center'
+                var i = window.document.createElement('img')
+                i.src = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+                d.appendChild(i)
+            </script>
+        ou:
+            var img=document.createElement('img')
+            img.src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
+            document.body.appendChild(img)
+            
+
+        

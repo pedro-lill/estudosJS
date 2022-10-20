@@ -32,3 +32,28 @@ function calcular(){
             var res = document.querySelector('div#res')
             res.innerHTML = `<p class="${cor}">${msg}</p>`
         }
+
+
+        <h1>Exercicio 22</h1>
+    <h2>Escreva um programa que leia um número inteiro qualquer e peça para o usuário escolher qual será a base de conversão: 1 para binário, 2 para octal e 3 para hexadecimal.</h2>
+    <h3>Resposta:</h3>
+    <?php
+        $num = $_GET["num"];
+        $base = $_GET["base"];
+        switch ($base) {
+            case 1:
+                echo "O numero $num em binario é ".decbin($num);
+                break;
+            case 2:
+                echo "O numero $num em octal é ".decoct($num);
+                break;
+            case 3:
+                echo "O numero $num em hexadecimal é ".dechex($num);
+                break;
+            default:
+                echo "Opção invalida";
+                break;
+        }
+    ?>
+    <br>
+    <a href="ex022.html">Voltar</a>
