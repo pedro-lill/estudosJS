@@ -1,0 +1,69 @@
+perguntas da ultima aula:
+1) mudar a cor de fundo de um site dinamicamente:
+    document.body.style.backgroundColor = "red";
+
+2) inserir uma imagem dentro do site sem ter a tag <img> previamente criada:
+    var img = document.createElement("img");
+    img.src = "http://www.google.com.br/images/srpr/logo3w.png";
+    document.body.appendChild(img);
+
+3) inserir um elemento dentro do site sem ter a tag <div> previamente criada:
+    var div = document.createElement("div");
+    div.innerHTML = "Hello World";
+    document.body.appendChild(div);
+
+
+tudo sobre laços de repetição no js
+
+ex:
+    function comerPizzaa(){
+        comerPizza();
+        comerPizza();
+        comerPizza();
+        comerPizza();
+        comerPizza();
+        comerPizza();
+        //até comer inteira
+        //precisamos sair do ponto a até o b
+        // executar tarefas sequencialmente até um ponto
+        // as vezes temos um teste logico nesse trajeto
+        // nem sempre sabemos quantas vezes vamos executar
+
+
+    }
+//o que  é um laço de repetição
+//laço de repetição é um conjunto de instruções que se repetem até que uma condição seja satisfeita
+//ex: enquanto eu não comer a pizza eu continuo comendo
+//ex: enquanto eu não chegar no ponto b eu continuo andando
+// o while é um laço de repetição que executa um bloco de código enquanto uma condição for verdadeira
+//ex: enquanto eu não comer a pizza eu continuo comendo
+while(condicao){
+    //bloco de código
+}
+dessa forma o bloco de código será executado enquanto a condição for verdadeira;
+    #1: declaramos a variavel linhas - ela armazenará a quantidade de linhas que queremos desenhar (ler de um input e armezenar na variavel criada)
+    
+
+function comerPizza(){
+    while(temFatia()){
+        comerFatia();   }
+}
+
+var count=1
+while(count < 10){
+    console.log("vamo dalee!!!")
+    count ++
+    
+}
+
+var count = 1
+do{
+    console.log(`passo : ${count}`)
+    count++
+}while(count<=10)
+
+outra maneira
+for(var count = 1; count<=10; count++){
+    console.log(`passo : ${count}`)
+}
+
