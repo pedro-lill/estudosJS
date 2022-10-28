@@ -1,4 +1,15 @@
 Repeticoes em js parte 2
 
 o do while funciona assim :
-    
+
+    do {
+        // codigo
+
+    } while (condicao);
+
+    o for funciona assim:
+
+    for (var i = 0; i < 10; i++) {
+        // codigo
+        
+    }
