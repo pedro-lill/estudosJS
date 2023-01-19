@@ -296,3 +296,14 @@ condições multiplas
             
 
         
+        sugestao de while para print:
+
+    var tab = document.getElementById("numero");
+        res.innerHTML = "";
+        while(c<=10){
+            var item = document.createElement("option");
+            item.text = `${n} x ${c} = ${n*c}`;
+            item.value = `tab${c}`;
+            res.appendChild(item);
+            c++;
+        }
